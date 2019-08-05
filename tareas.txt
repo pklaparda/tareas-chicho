@@ -1,0 +1,27 @@
+Creen un directorio en sus homes que se llame "tareas-chicho" y, dentro de él, creen subdirectorios para cada tarea, llamados "tarea-#" (con 3 dígitos). Ej.: "tarea-001", "tarea-002", etc. Cada tarea va a tener su script adentro. Ej.: "tarea-003.sh". Además, un script "clean-workspace.sh" que borre todo en ese directorio, salvo por lps scripts mencionados.
+
+Escriban scripts en bash que hagan lo siguiente:
+
+Tarea 1)
+Crear 100 archivos con nombres "arch-001.txt", "arch-002.txt" ... "arch-100.txt" conteniendo, cada uno, el número propio. Ej.: arch-001.txt contendrá "1", arch-083.txt contendrá "83".
+
+Tarea 2)
+Dado un número como parámetro, realizar la tarea 1, con la cantidad necesaria de "0"s. Ej.: con 15, usar dos dígitos ("arch-01.txt" ... "arch-15.txt"); con 1024, usar 4 dígitos ("arch-0001.txt" ... "arch-1024.txt").
+
+Tarea 3)
+Mover todos los archivos de un directorio con un número (de cantidad de dígitos variable) en sus nombres al mismo formato sumando 1 a cada nombre. Si no da la cantidad de dígitos, agregar uno. Si un archivo tiene dos grupos de dígitos en su nombre, sumar sólo al último.
+Ej.:
+arch-001.txt -> arch-002.txt
+arch-999.txt -> arch-1000.txt
+arch-01-03.txt -> arch-01-04.txt
+
+Tarea 4)
+Testear la tarea 3 de la siguiente manera: cada archivo en el directorio de ejecución tendrá que tener sólo el número inmediatamente anterior al de su nombre como contenido.
+
+Tarea 5)
+Dado un número como parámetro, realizar la tarea 3, sumando ese número en vez de 1. Ej.:
+./tarea-004.sh 3
+arch-032.txt -> arch-035.txt
+
+Tarea 6)
+Dado un número como parámetro, testear la tarea 5 (como lo que hicieron para la tarea 4).
